@@ -1,0 +1,15 @@
+.homepage {
+    text-align: center;
+    padding: 2rem;
+}
+
+.homepage h1 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.homepage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Adds rounded corners to your image */
+}
