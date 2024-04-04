@@ -1,15 +1,24 @@
 .homepage {
     text-align: center;
-    padding: 2rem;
+    padding: 0; /* Adjust padding as needed, or remove if unnecessary */
+    color: white; /* This ensures text stands out against a dark background */
+    background-image: url('../../assets/restaurant.jpg'); /* Update path as needed */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* This makes the element cover the full viewport height */
+    width: 100%; /* This ensures it covers the full viewport width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0; /* Remove any default margin */
 }
-
 .homepage h1 {
-    color: #333;
-    margin-bottom: 2rem;
+    margin: 0;
+    font-size: 2.5rem; /* Adjust size as needed */
 }
-
-.homepage img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; /* Optional: Adds rounded corners to your image */
+.homepage-image {
+   width: 100vw; 
+    height: 100vh;
+    border-radius: 8px; /* Adds rounded corners to the image */
+    object-fit: cover; /* Ensures the image covers the entire div */
 }

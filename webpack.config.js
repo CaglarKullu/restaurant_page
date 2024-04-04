@@ -8,13 +8,18 @@ module.exports = {
   },
   devtool: 'inline-source-map', // Useful for development, switch to a different option for production
   devServer: {
-    static: './dist',
-    hot: true, // Enable hot module replacement
-  },
+    static: './dist/',
+    hot: true,
+    devMiddleware: {
+        publicPath: '/dist/',
+        writeToDisk: true,
+     },    
+   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Restaurant Page',
       template: './src/index.html', // Template file for your HTML
+      cache:false
     }),
   ],
   output: {
@@ -36,20 +41,26 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.module\.css$/,
         use: [
-          'style-loader', // Inject CSS into the DOM
+          'style-loader', 
           {
             loader: 'css-loader',
             options: {
-              modules: true, // Enable CSS Modules for local scope CSS
+              modules: true, 
             },
           },
         ],
       },
       {
+        // For global CSS (not CSS modules)
+        test: /\.css$/,
+        exclude: /\.module\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource', // Handle image files
+        type: 'asset/resource', 
       },
       // Additional loaders for other file types can be added here
     ],
@@ -57,4 +68,5 @@ module.exports = {
   optimization: {
     runtimeChunk: 'single', // Create a runtime file to be shared for all generated chunks
   },
+  cache: false, // Disable cache for development
 };

@@ -1,0 +1,18 @@
+:root{
+    --primary-color: red;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #f8f8f8;
+}

@@ -1,10 +1,12 @@
 // Import the necessary components
 import createHeader from './components/Header/Header.js';
 import createFooter from './components/Footer/Footer.js';
-import createHomePage from './components/HomePage/HomePage.js'; // Assuming you have a component for the home page
+import createHomePage from './components/HomePage/HomePage.js';
+import '../src/global.css';
 
 // Get the app element
 const app = document.getElementById('app');
+
 
 // Function to initialize the app
 function initializeApp() {
