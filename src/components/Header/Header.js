@@ -1,4 +1,5 @@
-import './Header.css'; // Import the CSS directly into your JS component
+import './Header.css';
+import { getState, setState } from '../../store';
 
 /**
  * Creates a header element for the restaurant page.
@@ -9,6 +10,8 @@ function createHeader() {
   const header = document.createElement('header');
   header.textContent = 'Restaurant Page';
   header.classList.add('header'); 
+ const activeTab = getState().activeTab;
+ console.log(activeTab);
 
   return header;
 }

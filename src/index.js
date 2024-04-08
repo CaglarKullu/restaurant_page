@@ -7,7 +7,6 @@ import '../src/global.css';
 // Get the app element
 const app = document.getElementById('app');
 
-
 // Function to initialize the app
 function initializeApp() {
   app.appendChild(createHeader()); // Append the header to the app
@@ -17,3 +16,6 @@ function initializeApp() {
 
 // Call the function to initialize the app
 initializeApp();
+
+// make a fucnction to create the tabs
+
