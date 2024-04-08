@@ -1,4 +1,5 @@
-// Initial state
+import createHomePage from './components/HomePage/HomePage.js';
+import createComponentGenerator from './components/Component_Generator/Componenet_Generator.js';
 const state = {
     activeTab: 0,
     tabs: [
@@ -6,7 +7,7 @@ const state = {
         id: 0,
         name: 'Home',
         active: true,
-        content: 'Home content'
+        content: createHomePage
       },
       {
         id: 1,
@@ -74,12 +75,9 @@ const state = {
   
   // Function to render the content for the active tab
   function renderContent() {
-    const { tabs, activeTab } = getState();
-    const activeContent = tabs.find(tab => tab.id === activeTab).content;
-    const contentContainer = document.getElementById('main-content');
-    contentContainer.innerHTML = activeContent; // Assuming content is a string or HTML
+    const content = createComponentGenerator(); 
+  return content;
   }
-  
   
   export { getState, setState, activateTab, renderTabs, renderContent };
   

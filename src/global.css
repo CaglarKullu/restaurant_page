@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'MyFont';
+  font-family: 'Alba';
   src: url('../src/fonts/ALBA.ttf');
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'MyFont2';
+  font-family: 'AlbaS';
   src: url('../src/fonts/ALBAS.ttf');
   font-weight: normal;
 }
@@ -15,8 +15,8 @@
   --accent-color: #f3d1bf;  /* Warm peach */
   --background-color: #f7f5e6; /* Light cream */
   --text-color: #5a5a5a;    /* Soft dark grey */
-  --font-heading: 'MyFont', cursive; 
-  --font-body: 'MyFont2', sans-serif; 
+  --font-heading: 'Alba', cursive; 
+  --font-body: 'AlbaS', sans-serif; 
 }
 body {
     margin: 0;
@@ -32,10 +32,10 @@ body {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
 }
 
-/* Additional global styles for retro feel */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
 }
@@ -49,9 +49,9 @@ a {
     padding: 20px;
     margin-top: 20px;
     width: 90%;
-    max-width: 800px; /* Adjust based on your design preference */
-    text-align: center; /* Center the content text */
-    border: 1px solid #ccc; /* Light border around the content */
+    max-width: 800px; 
+    text-align: center; 
+    border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #f9f9f9; /* Light background for content */
+    background-color: #f9f9f9; 
   }
