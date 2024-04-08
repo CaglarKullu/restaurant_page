@@ -62,9 +62,23 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource', 
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
+      },
       // Additional loaders for other file types can be added here
     ],
   },
+  watch: true,
   optimization: {
     runtimeChunk: 'single', // Create a runtime file to be shared for all generated chunks
   },
