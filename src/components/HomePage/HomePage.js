@@ -4,7 +4,6 @@ import restaurantImage from '../../assets/restaurant.jpg'; // Make sure the path
 function createHomePage() {
     const homePage = document.createElement('div');
     homePage.classList.add('homepage');
-    // Set the background image dynamically
     homePage.style.backgroundImage = `url(${restaurantImage})`;
 
     const heading = document.createElement('h1');

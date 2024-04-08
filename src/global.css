@@ -1,24 +1,23 @@
 @font-face {
-    font-family: 'MyFont';
-    src: url('../src/fonts/ALBA.ttf');
-    font-weight: normal;
-  }
-
-  @font-face {
-    font-family: 'MyFont2';
-    src: url('../src/fonts/ALBAS.ttf');
-    font-weight: normal;
-  }
-
-:root {
-    --primary-color: #d60000; 
-    --accent-color: #f9d648; 
-    --background-color: #fffbe7; 
-    --text-color: #333; 
-    --font-heading: 'MyFont'; 
-    --font-body: 'MyFont2'; 
+  font-family: 'MyFont';
+  src: url('../src/fonts/ALBA.ttf');
+  font-weight: normal;
 }
 
+@font-face {
+  font-family: 'MyFont2';
+  src: url('../src/fonts/ALBAS.ttf');
+  font-weight: normal;
+}
+
+:root {
+  --primary-color: #9ad3bc; /* Soft green */
+  --accent-color: #f3d1bf;  /* Warm peach */
+  --background-color: #f7f5e6; /* Light cream */
+  --text-color: #5a5a5a;    /* Soft dark grey */
+  --font-heading: 'MyFont', cursive; 
+  --font-body: 'MyFont2', sans-serif; 
+}
 body {
     margin: 0;
     padding: 0;
@@ -45,27 +44,14 @@ a {
     color: var(--primary-color);
     text-decoration: none; /* Remove underlines from links */
 }
-
-/* Add textures or borders as needed for retro effect */
-.menu-board {
-    border: 5px double var(--primary-color); /* Example of a retro-styled border */
-    padding: 1rem;
-    margin: 1rem 0;
-}
-
-/* Sample button that fits the diner theme */
-.button-retro {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.button-retro:hover {
-    background-color: darken(var(--primary-color), 10%);
-}
-
-
+  /* Main Content Styles */
+  #main-content {
+    padding: 20px;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 800px; /* Adjust based on your design preference */
+    text-align: center; /* Center the content text */
+    border: 1px solid #ccc; /* Light border around the content */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Light background for content */
+  }

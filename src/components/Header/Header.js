@@ -1,19 +1,29 @@
-import './Header.css';
-import { getState, setState } from '../../store';
+import { getState, setState,renderTabs, renderContent } from '../../store.js';
+import './Header.css'; 
 
-/**
- * Creates a header element for the restaurant page.
- *
- * @return {Element} The created header element.
- */
 function createHeader() {
-  const header = document.createElement('header');
-  header.textContent = 'Restaurant Page';
-  header.classList.add('header'); 
- const activeTab = getState().activeTab;
- console.log(activeTab);
+    const { tabs } = getState();
+    const header = document.createElement('header');
+    header.classList.add('header');
 
-  return header;
+    const nav = document.createElement('nav');
+    nav.classList.add('nav-tabs');
+
+    tabs.forEach(tab => {
+      const button = document.createElement('button');
+      button.textContent = tab.name;
+      button.classList.add('tab-button'); 
+      if (tab.active) button.classList.add('active');
+      button.addEventListener('click', () => {
+          setState({ activeTab: tab.id });
+          renderTabs();
+          renderContent();
+      });
+      nav.appendChild(button);
+  });
+
+    header.appendChild(nav);
+    return header;
 }
 
 export default createHeader;
