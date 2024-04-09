@@ -67,7 +67,7 @@ Welcome to my Restaurant Page project! This single-page application (SPA) showca
 To get this project running on your local machine:
 
 1. Clone the repo:
- ```git clone[ [https://github.com/yourusername/restaurant-page.git]()](https://github.com/CaglarKullu/restaurant_page) ```
+ ```git clone https://github.com/CaglarKullu/restaurant_page ```
 2. Navigate to the project directory:
  ``` cd restaurant-page  ```
 3. Install dependencies:
