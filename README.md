@@ -31,6 +31,14 @@ Welcome to my Restaurant Page project! This single-page application (SPA) showca
 To get this project running on your local machine:
 
 1. Clone the repo:
+ ```git clone https://github.com/CaglarKullu/restaurant_page ```
+2. Navigate to the project directory:
+ ``` cd restaurant-page  ```
+3. Install dependencies:
+ ``` npm install  ```
+4. Run the development server:
+ ``` npm start  ```
+This will open the project in your default web browser.
 
 Given the focus on a front-end restaurant page using Vanilla JS and Webpack, let's tailor the README to reflect these specifics. This will help highlight your project's features, the technologies involved, and your skills in creating a dynamic, client-side application.
 
@@ -61,20 +69,6 @@ Welcome to my Restaurant Page project! This single-page application (SPA) showca
 - Deepened my understanding of ES6+ features, especially template literals and fetch API for dynamic content generation.
 - Gained practical experience in configuring and optimizing Webpack for a front-end project.
 - Enhanced my skills in responsive web design, focusing on mobile-first principles.
-
-## Setup and Installation
-
-To get this project running on your local machine:
-
-1. Clone the repo:
- ```git clone https://github.com/CaglarKullu/restaurant_page ```
-2. Navigate to the project directory:
- ``` cd restaurant-page  ```
-3. Install dependencies:
- ``` npm install  ```
-4. Run the development server:
- ``` npm start  ```
-This will open the project in your default web browser.
 
 ## About the Developer
 
