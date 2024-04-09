@@ -78,4 +78,4 @@ This will open the project in your default web browser.
 
 ## About the Developer
 
-I'm Caglar Kullu, a passionate developer with a keen interest in creating engaging, high-performance web applications. This project was a valuable step in my journey, honing my skills in Vanilla JS, CSS3, and Webpack.
+I'm Caglar Kullu, a passionate developer with a keen interest in creating engaging, high-performance applications. This project was a valuable step in my journey, honing my skills in Vanilla JS, CSS3, and Webpack.
