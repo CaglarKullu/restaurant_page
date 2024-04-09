@@ -34,9 +34,6 @@ To get this project running on your local machine:
 
 Given the focus on a front-end restaurant page using Vanilla JS and Webpack, let's tailor the README to reflect these specifics. This will help highlight your project's features, the technologies involved, and your skills in creating a dynamic, client-side application.
 
-Sample README for Your Restaurant Page Project
-markdown
-Copy code
 # My Restaurant Page
 
 Welcome to my Restaurant Page project! This single-page application (SPA) showcases a dynamic, interactive menu and information about a fictional restaurant. It's built using pure Vanilla JS, demonstrating skills in DOM manipulation, event handling, and modular JavaScript, all bundled together with Webpack.
@@ -70,15 +67,15 @@ Welcome to my Restaurant Page project! This single-page application (SPA) showca
 To get this project running on your local machine:
 
 1. Clone the repo:
-'''git clone[ [https://github.com/yourusername/restaurant-page.git]()](https://github.com/CaglarKullu/restaurant_page)'''
+ ```git clone[ [https://github.com/yourusername/restaurant-page.git]()](https://github.com/CaglarKullu/restaurant_page) ```
 2. Navigate to the project directory:
-''' cd restaurant-page '''
+ ``` cd restaurant-page  ```
 3. Install dependencies:
-''' npm install '''
+ ``` npm install  ```
 4. Run the development server:
-''' npm start '''
+ ``` npm start  ```
 This will open the project in your default web browser.
 
 ## About the Developer
 
-I'm Caglar Kulli, a passionate developer with a keen interest in creating engaging, high-performance web applications. This project was a valuable step in my journey, honing my skills in Vanilla JS, CSS3, and Webpack.
+I'm Caglar Kullu, a passionate developer with a keen interest in creating engaging, high-performance web applications. This project was a valuable step in my journey, honing my skills in Vanilla JS, CSS3, and Webpack.
