@@ -17,7 +17,7 @@ function createAbout() {
 
     // Image related to the story
     const storyImage = document.createElement('img');
-    storyImage.src = `url(${familyPhoto})`; 
+    storyImage.src = '../../assets/family.jpg'; 
     storyImage.alt = 'A family gathering in Sicily';
     storyImage.style.maxWidth = '100%';
     about.appendChild(storyImage);
