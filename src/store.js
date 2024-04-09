@@ -1,5 +1,7 @@
 import createHomePage from './components/HomePage/HomePage.js';
-import createComponentGenerator from './components/Component_Generator/Componenet_Generator.js';
+import createAbout from './components/About/About.js';
+import createContact from './components/Contact/Contact.js';
+import createMenu from './components/Menu/Menu.js';
 const state = {
     activeTab: 0,
     tabs: [
@@ -13,19 +15,19 @@ const state = {
         id: 1,
         name: 'About',
         active: false,
-        content: 'About content'
+        content: createAbout
       },
       {
         id: 2,
         name: 'Contact',
         active: false,
-        content: 'Contact content'
+        content: createContact
       },
       {
         id: 3,
         name: 'Menu',
         active: false,
-        content: 'Menu content'
+        content: createMenu
       }
     ]
   };
@@ -75,9 +77,21 @@ const state = {
   
   // Function to render the content for the active tab
   function renderContent() {
-    const content = createComponentGenerator(); 
-  return content;
-  }
-  
+    let mainContent = document.getElementById('main-content');
+    // If mainContent doesn't exist, create and append it
+    if (!mainContent) {
+        mainContent = document.createElement('div');
+        mainContent.id = 'main-content';
+        mainContent.classList.add('main-content');
+        app.appendChild(mainContent);
+    }
+    // Update content
+    const { tabs, activeTab } = getState();
+    const activeTabContent = tabs[activeTab].content;
+    mainContent.innerHTML = ''; // Clear existing content
+    mainContent.appendChild(activeTabContent()); // Update with new content
+}
+
+
   export { getState, setState, activateTab, renderTabs, renderContent };
   
