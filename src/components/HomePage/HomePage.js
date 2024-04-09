@@ -1,5 +1,5 @@
 import './HomePage.css';
-import restaurantImage from '../../assets/restaurant.jpg'; // Make sure the path is correct
+import restaurantImage from '../../assets/restaurant.jpg';
 
 function createHomePage() {
     const homePage = document.createElement('div');

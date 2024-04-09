@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "watch": "webpack --watch --mode development",
     "start": "webpack serve --open --mode development",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "homepage": "https://caglarkullu.github.io/restaurant_page/",
   "keywords": [],
