@@ -1,4 +1,4 @@
-function    createAbout() {
+function createAbout() {
     const about = document.createElement('div');
     about.classList.add('about');   
 

@@ -80,7 +80,9 @@ module.exports = {
   },
   watch: true,
   optimization: {
-    runtimeChunk: 'single', // Create a runtime file to be shared for all generated chunks
+    splitChunks: {
+      chunks: 'all',
+    },
   },
   cache: false, // Disable cache for development
 };
