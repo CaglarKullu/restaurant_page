@@ -5,6 +5,7 @@
     padding: 20px;
     max-width: 800px;
     margin: auto;
+    height: 100vh;
 }
 
 .menu-category {
@@ -44,3 +45,9 @@
     float: right;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .menu {
+        width: 80%;
+    };
+  }

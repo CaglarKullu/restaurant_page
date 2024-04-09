@@ -33,3 +33,10 @@
   color: var(--background-color);
   border-color: var(--accent-color); /* Changes border color on hover/active */
 }
+
+@media (max-width: 768px) {
+  .tab-button {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+}

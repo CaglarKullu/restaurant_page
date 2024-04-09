@@ -60,4 +60,10 @@
     .contact form {
         gap: 8px; 
     }
+
+    @media (max-width: 768px) {
+        .contact {
+            width: 80%;
+        };
+      }
 }

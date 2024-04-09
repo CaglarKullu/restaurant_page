@@ -50,3 +50,15 @@ a {
     height: 100%;
     align-items: center;
   }
+
+/* Media Queries */
+@media (min-width: 768px) {
+    /* Adjustments for tablets and desktops */
+    #main-content #app  {
+        padding: 20px;
+        margin: 20px auto; /* Centering */
+        max-width: 600px; /* Maximum width to maintain readability */
+    }
+
+    /* Additional styles for larger screens */
+}
